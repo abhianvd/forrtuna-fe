@@ -1,0 +1,44 @@
+.title {
+  font-size: 1.6em;
+  color: #fb9b34;
+  text-align: center;
+  margin: 1.5em;
+}
+.feedbackHeader {
+  color: #040c6c;
+  text-align: center;
+  margin: 1em 0;
+}
+.customerFeedbackWrapper {
+}
+.carouselItem {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 4px #999494;
+  margin: 10px;
+  padding: 1em 0.8em;
+  position: relative;
+  height: 260px;
+}
+.carouselItem p {
+  text-align: center;
+  color: #0464fc;
+  font-size: 0.9em;
+  margin: 0.8em 0;
+}
+.feedbackPersonName {
+  text-align: center;
+  color: #fb9b34;
+  font-size: 0.9em;
+}
+.feedbackCarouselWrapper {
+  margin: 0 30px;
+}
+.feedbackPersonImgWrapper img {
+  width: 60px;
+  border-radius: 50%;
+}
+.feedbackPersonImgWrapper {
+  margin-top: 1em;
+}

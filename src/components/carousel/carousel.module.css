@@ -1,0 +1,150 @@
+.carouselItem {
+  height: 70vh;
+}
+#carouseItemOne {
+  background-image: url("../../assets/images/carousel1.png");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#carouseItemTwo {
+  background-image: url("../../assets/images/paper-4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#carouseItemThree {
+  background-image: url("../../assets/images/paper-5.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#carouseItemFour {
+  background-image: url("../../assets/images/paper-3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.carouselWrapper {
+  position: relative;
+}
+.carouselContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.searchBox {
+}
+.searchBoxWrapper {
+  display: flex;
+}
+.inputWrapper {
+  background-color: white;
+  padding: 5px;
+  padding-left: 10px;
+  width: 220px;
+  border: 2px solid #ff9800;
+  border-right: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.inputWrapper input {
+  height: 3em;
+  border: none;
+  outline: none;
+  padding-left: 13px;
+}
+.inputWrapper span {
+  color: #74b7e6;
+  font-weight: 400;
+}
+.selectEl {
+  border: 2px solid #ff9800;
+  color: #74b7e6;
+  font-weight: 600;
+  width: 220px;
+  padding-left: 13px;
+}
+.searchBtn {
+  width: 100px;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  background-color: #ff9933;
+  font-size: 1em;
+}
+.carouselTilesWrapper {
+  position: absolute;
+  right: 0;
+}
+.celebrateWrapper {
+  margin-top: 1.4em;
+  font-size: 2em;
+  text-decoration: underline;
+  color: #020c6d;
+  text-align: center;
+}
+.carouselTile {
+  background-color: #ffffffe6;
+  height: 3em;
+  margin: 0.5em 0;
+  font-size: 0.9em;
+  display: flex;
+
+  color: #2796e4;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 2em 0.5em;
+  display: flex;
+  align-items: center;
+}
+.carouselTile img {
+  width: 36px;
+  margin-right: 0.8em;
+}
+.messageUsWrapper {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 13px;
+  right: 13px;
+}
+.messageUsTxt {
+  background-color: white;
+  padding: 3px 0.3em;
+  border-radius: 8px;
+  width: 100px;
+  color: #333;
+  font-size: 0.9em;
+  display: flex;
+  justify-content: center;
+}
+.whatsappWrapper {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #4fce5d;
+  color: white;
+  margin-left: 8px;
+}
+.whatsappWrapper i {
+  font-size: 1.3em;
+}
+.messageUsTxt::after {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  left: 98px;
+  top: 9px;
+  border: 8px solid transparent;
+  border-left: 8px solid white;
+}

@@ -1,0 +1,60 @@
+.downloadAppWrapper {
+  width: 90%;
+  margin: auto;
+  margin-top: 3em;
+}
+.downloadAppWrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+.leftWrapper {
+  display: flex;
+  align-items: center;
+}
+.leftWrapper img {
+  width: 300px;
+}
+.title {
+  color: #082c94;
+  font-size: 1.8em;
+  margin-right: 3em;
+}
+.rightWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.qrTitle {
+  color: #fb9b34;
+  margin: 1em;
+  font-size: 1.2em;
+}
+.getAppWrapper {
+  display: flex;
+  margin-top: 1em;
+  align-items: center;
+}
+.appStore {
+  display: flex;
+  border: 2px solid #fb9b34;
+  border-radius: 4px;
+  color: #082c94;
+  margin: 0.3em;
+  padding: 0.4em;
+}
+.iconWrapper {
+  margin-right: 0.7em;
+  display: flex;
+  align-items: center;
+}
+.iconWrapper i {
+  font-size: 2em;
+}
+.storeName {
+  font-size: 1.42em;
+  font-weight: 700;
+}
+.availableTxt {
+  font-weight: 500;
+}
