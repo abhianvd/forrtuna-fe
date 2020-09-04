@@ -14,8 +14,12 @@
   margin: 0.4em 0;
 }
 .footerListItem a {
-  color: #b8d4ec;
+  color: #ccedff;
   font-size: 0.85em;
+  font-weight: bold;
+}
+.footerListItem a:hover {
+  color: #ffffff;
 }
 .copyrightWrapper {
   display: flex;
@@ -52,14 +56,14 @@
   background-color: #00acee;
 }
 .fbWrapper {
-  /* background-color: #3b5998; */
+  background-color: #3b5998;
 }
 .whatsappWrapper {
-  /* background-color: #4fce5d; */
+  background-color: #4fce5d;
 }
 .instWrapper {
-  /* background-color: #3f729b; */
+  background-color: #3f729b;
 }
 .ytWrapper {
-  /* background-color: #c4302b; */
+  background-color: #c4302b;
 }

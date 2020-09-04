@@ -2,6 +2,8 @@ import React from "react";
 import classes from "./downloadApp.module.css";
 import mobileIcon from "../../assets/images/MobileApp_icon@2x.png";
 import qrIcon from "../../assets/images/qr.png";
+import gPlay from "../../assets/images/gplay.png";
+import appStoreIcon from "../../assets/images/appstore.jpg";
 
 const DownloadApp = (props) => {
   const {
@@ -33,7 +35,7 @@ const DownloadApp = (props) => {
         <div className={getAppWrapper}>
           <div className={appStore}>
             <div className={iconWrapper}>
-              <i className="fab fa-app-store-ios"></i>
+              <img src={appStoreIcon} alt="google-play" />
             </div>
             <h5 className={availableTxt}>
               Available on the <br />
@@ -42,7 +44,7 @@ const DownloadApp = (props) => {
           </div>
           <div className={appStore}>
             <div className={iconWrapper}>
-              <i className="fab fa-google-play"></i>
+              <img src={gPlay} alt="google-play" />
             </div>
             <h5 className={availableTxt}>
               Android App on <br />

@@ -8,6 +8,7 @@ import credIcon from "../../assets/images/Credit_Card_icon@2x.png";
 import persIcon from "../../assets/images/Personal_loan_icon@2x.png";
 import homeIcon from "../../assets/images/Home_loan_icon@2x.png";
 import businessIcon from "../../assets/images/business_loan_icon@2x.png";
+import { Navbar } from "..";
 
 const Carousel = (props) => {
   const {
@@ -30,6 +31,9 @@ const Carousel = (props) => {
     carouseItemThree,
     carouseItemFour,
   } = classes;
+
+  const { dsaSignUpModalVisible, setDsaSignUpVisible } = props;
+
   const settings = {
     autoplay: true,
     arrows: false,
@@ -41,6 +45,12 @@ const Carousel = (props) => {
   };
   return (
     <div className={carouselWrapper}>
+      <header className="App-header">
+        <Navbar
+          dsaSignUpModalVisible={dsaSignUpModalVisible}
+          setDsaSignUpVisible={setDsaSignUpVisible}
+        />
+      </header>
       <div className={carouselContent}>
         <div className={searchBox}>
           <div className={searchBoxWrapper}>

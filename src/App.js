@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import {
@@ -11,16 +11,20 @@ import {
   CustomerFeedback,
   DownloadApp,
   Footer,
+  DSASignUp,
 } from "./components";
 
 function App() {
+  const [dsaSignUpModalVisible, setDsaSignUpVisible] = useState(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <Navbar />
-      </header>
+      <DSASignUp />
       <div>
-        <Carousel />
+        <Carousel
+          dsaSignUpModalVisible={dsaSignUpModalVisible}
+          setDsaSignUpVisible={setDsaSignUpVisible}
+        />
       </div>
       <div>
         <WhyChoose />

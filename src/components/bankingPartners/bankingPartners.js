@@ -17,6 +17,10 @@ import indiaBullsIcon from "../../assets/images/indbulls.png";
 import barodaIcon from "../../assets/images/baroda.png";
 import rblIcon from "../../assets/images/rbl.png";
 
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 const BankingPartners = (props) => {
   const {
     bankingPartnersWrapper,
@@ -26,11 +30,21 @@ const BankingPartners = (props) => {
     colorOverlay,
   } = classes;
 
+  const settings = {
+    autoplay: true,
+    dots: false,
+    infinite: true,
+    speed: 500,
+    className: "centerA",
+    centerMode: true,
+    slidesToShow: 5,
+  };
+
   return (
     <div className={bankingPartnersWrapper}>
-      <div className={colorOverlay}>
-        <h3 className={title}>BANKING / NBFC PARTNERS</h3>
-        <div className={bankingPartnersItemWrapper}>
+      <h3 className={title}>BANKING / NBFC PARTNERS</h3>
+      <div className={bankingPartnersItemWrapper}>
+        <Slider {...settings}>
           <div className={bankingPartnerItem}>
             <img src={iciciIcon} alt="banking-partner" />
           </div>
@@ -77,7 +91,7 @@ const BankingPartners = (props) => {
           <div className={bankingPartnerItem}>
             <img src={rblIcon} alt="banking-partner" />
           </div>
-        </div>
+        </Slider>
       </div>
     </div>
   );

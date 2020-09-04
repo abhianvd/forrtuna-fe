@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import classes from "./navbar.module.css";
-import logo from "../../assets/images/logo.png";
+// import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/logo2.png";
 import navIcon from "../../assets/images/icon_navigation_menu@2x.png";
+import navBlueIcon from "../../assets/images/navBlue.png";
 
 const Navbar = (props) => {
   const {
@@ -15,11 +17,32 @@ const Navbar = (props) => {
     navItemWrapper,
     applyBtn,
     navItem,
+    navApply,
     navLeftUl,
     navRightUl,
+    navBlue,
+    navOrange,
+    navIconLi,
+    navWhite,
   } = classes;
+
+  const { dsaSignUpModalVisible, setDsaSignUpVisible } = props;
+
+  const [isScrolledDown, setIsScrolledDown] = useState(false);
+
+  useEffect(() => {
+    document.addEventListener("scroll", () => {
+      if (window.scrollY < 100) {
+        setIsScrolledDown(false);
+      }
+      if (window.scrollY > 100 && !isScrolledDown) {
+        setIsScrolledDown(true);
+      }
+    });
+  }, []);
+
   return (
-    <div className={navWrapper}>
+    <div className={`${navWrapper} ${isScrolledDown ? navWhite : ""}`}>
       <div className={logoContainer}>
         <img src={logo} alt="logo" />
       </div>
@@ -70,15 +93,16 @@ const Navbar = (props) => {
             <li className={navItem}>
               <a href="#">Free Credit Score</a>
             </li>
-            <li className={navItem}>
+            <li className={navItem} onClick={() => setDsaSignUpVisible(true)}>
               <a href="#">Partner Now</a>
             </li>
             <li className={navItem}>Login</li>
-            <li className={navItem}>
+            <li className={`${navItem} ${navApply}`}>
               <button className={applyBtn}>Apply Now</button>
             </li>
-            <li className={navItem}>
-              <img src={navIcon} alt="nav" />
+            <li className={`${navItem} ${navIconLi}`}>
+              <img className={`${navBlue}`} src={navBlueIcon} alt="navBlue" />
+              <img className={navOrange} src={navIcon} alt="nav" />
             </li>
           </ul>
         </div>

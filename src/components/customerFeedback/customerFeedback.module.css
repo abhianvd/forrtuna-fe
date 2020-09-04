@@ -16,10 +16,14 @@
   flex-direction: column;
   align-items: center;
   box-shadow: 0 0 4px #999494;
-  margin: 10px;
+  margin: 10px auto;
   padding: 1em 0.8em;
   position: relative;
   height: 260px;
+  width: 85% !important;
+  transform: scale(0.8);
+  transition: transform 390ms ease;
+  /* margin: auto; */
 }
 .carouselItem p {
   text-align: center;
@@ -36,9 +40,25 @@
   margin: 0 30px;
 }
 .feedbackPersonImgWrapper img {
-  width: 60px;
+  width: 80px;
   border-radius: 50%;
 }
 .feedbackPersonImgWrapper {
   margin-top: 1em;
+  position: absolute;
+  bottom: -32px;
+  /* border: 1px solid; */
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 50%; */
+}
+.mirrorImg {
+  transform: scale(-1, -1);
+}
+.arrow {
+  width: 28px;
+  height: 40px;
 }

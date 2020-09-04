@@ -1,11 +1,28 @@
 .navWrapper {
   display: flex;
+  width: 100%;
+  /* position: relative; */
+  background: transparent;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 4;
+  height: 80px;
+  transition: all 300ms ease;
+}
+.navWhite {
+  background-color: white;
+  box-shadow: 1px 2px 1px 1px #dddddd;
+}
+.navWrapper:hover {
+  background-color: white;
 }
 .dropdownContentWrapper {
   visibility: hidden;
   background-color: #d5f3fd;
   color: blue;
   position: absolute;
+  top: 80px;
   /* transition: visibility 300ms ease; */
 }
 .logoContainer {
@@ -16,7 +33,7 @@
   align-items: center;
 }
 .logoContainer img {
-  max-width: 70%;
+  max-width: 88%;
 }
 .navItemWrapper {
   display: flex;
@@ -26,14 +43,15 @@
   align-items: stretch;
 }
 .navLeft {
-  flex-basis: 48%;
+  flex-basis: 40%;
   display: flex;
   align-items: stretch;
 }
 .navRight {
   display: flex;
   align-items: stretch;
-  flex-basis: 52%;
+  flex-basis: 55%;
+  justify-content: flex-end;
 }
 .navLeftUl {
   display: flex;
@@ -41,24 +59,28 @@
   margin-left: 30px;
 }
 .navItem {
-  margin-left: 35px;
+  margin-left: 1em;
   cursor: pointer;
   color: #ff9800;
   display: flex;
   align-items: center;
   padding: 10px;
   position: relative;
+  font-weight: bold;
 }
-.navItem:hover {
+.navItem:not(.navApply):hover {
   background-color: #bee6f3;
 }
 .navItem:hover a {
   color: blue;
 }
+.navItem:hover {
+  color: blue;
+}
 .navItem:hover .dropdownContentWrapper {
   visibility: visible;
   width: 260px;
-  top: 54px;
+  /* top: 54px; */
   left: 0;
   z-index: 3;
 }
@@ -73,6 +95,7 @@
 .navItem a {
   margin-left: 5px;
   color: #ff9800;
+  font-weight: bold;
 }
 .navItem span {
   font-size: 12px;
@@ -88,7 +111,20 @@
   color: white;
   padding: 8px 10px;
   border: none;
+  font-weight: bold;
 }
 .navItem img {
   width: 30px;
+}
+.navBlue {
+  display: none;
+}
+.navOrange {
+  display: block;
+}
+.navIconLi:hover .navBlue {
+  display: block;
+}
+.navIconLi:hover .navOrange {
+  display: none;
 }

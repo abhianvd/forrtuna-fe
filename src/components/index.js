@@ -7,3 +7,4 @@ export { default as BankingPartners } from "./bankingPartners/bankingPartners";
 export { default as CustomerFeedback } from "./customerFeedback/customerFeedback";
 export { default as DownloadApp } from "./downloadApp/downloadApp";
 export { default as Footer } from "./footer/footer";
+export { default as DSASignUp } from "./dsaSignup/dsaSignUpOne";

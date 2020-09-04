@@ -5,6 +5,21 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Ratings from "react-ratings-declarative";
 import personIcon from "../../assets/images/person.png";
+import arrowIcon from "../../assets/images/Arrow_Icon@2x.png";
+
+function Arrow(props) {
+  const { mirrorImg, arrow } = classes;
+  const { style, className, onClick, isLeft } = props;
+  return (
+    <img
+      src={arrowIcon}
+      onClick={onClick}
+      style={style}
+      className={`${isLeft ? mirrorImg : ""} ${className} ${arrow}`}
+      alt="left-arrow"
+    />
+  );
+}
 
 const CustomerFeedback = (props) => {
   const {
@@ -19,20 +34,22 @@ const CustomerFeedback = (props) => {
   } = classes;
   const settings = {
     autoplay: true,
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
-    // arrows: true,
+    className: "centerA",
+    centerMode: true,
+    nextArrow: <Arrow />,
+    prevArrow: <Arrow isLeft={true} />,
     slidesToShow: 3,
-    slidesToScroll: 1,
   };
 
   return (
     <div className={customerFeedbackWrapper}>
       <h3 className={title}>CUSTOMER FEEDBACK</h3>
-      <div className={feedbackCarouselWrapper}>
+      <div className={`${feedbackCarouselWrapper} feedbackWrapper`}>
         <Slider {...settings}>
-          <div className={carouselItem}>
+          <div className={`${carouselItem} carouselCl`}>
             <Ratings rating={5} widgetRatedColors="#0464fc">
               <Ratings.Widget widgetDimension="24px" />
               <Ratings.Widget widgetDimension="24px" />
@@ -53,7 +70,7 @@ const CustomerFeedback = (props) => {
               <img src={personIcon} alt="feedback-by" />
             </div>
           </div>
-          <div className={carouselItem}>
+          <div className={`${carouselItem} carouselCl`}>
             <Ratings rating={5} widgetRatedColors="#0464fc">
               <Ratings.Widget widgetDimension="24px" />
               <Ratings.Widget widgetDimension="24px" />
@@ -75,7 +92,7 @@ const CustomerFeedback = (props) => {
               <img src={personIcon} alt="feedback-by" />
             </div>
           </div>
-          <div className={carouselItem}>
+          <div className={`${carouselItem} carouselCl`}>
             <Ratings rating={5} widgetRatedColors="#0464fc">
               <Ratings.Widget widgetDimension="24px" />
               <Ratings.Widget widgetDimension="24px" />
@@ -96,7 +113,7 @@ const CustomerFeedback = (props) => {
               <img src={personIcon} alt="feedback-by" />
             </div>
           </div>
-          <div className={carouselItem}>
+          <div className={`${carouselItem} carouselCl`}>
             <Ratings rating={5} widgetRatedColors="#0464fc">
               <Ratings.Widget widgetDimension="24px" />
               <Ratings.Widget widgetDimension="24px" />

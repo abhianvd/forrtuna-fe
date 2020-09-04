@@ -18,6 +18,9 @@ const OurProducts = (props) => {
     applyNowBtn,
     ourProductsItemsWrapper,
     title,
+    ourProductsItemFront,
+    ourProductsItemInner,
+    ourProductsItemBack,
   } = classes;
 
   return (
@@ -25,68 +28,232 @@ const OurProducts = (props) => {
       <h3 className={title}>OUR PRODUCTS</h3>
       <div className={ourProductsItemsWrapper}>
         <div className={ourProductsItem}>
-          <div className={ourProductsItemImg}>
-            <img src={instLoan} alt="img" />
+          <div className={ourProductsItemInner}>
+            <div className={ourProductsItemFront}>
+              <div className={ourProductsItemImg}>
+                <img src={instLoan} alt="img" />
+              </div>
+              <h4>INSTANT LOAN</h4>
+              <button className={applyNowBtn}>APPLY NOW</button>
+            </div>
+            <div className={ourProductsItemBack}>
+              <div className={ourProductsItemImg}>
+                <img src={instLoan} alt="img" />
+              </div>
+              <h4>Available at 3%</h4>
+              <button className={applyNowBtn}>APPLY NOW</button>
+            </div>
           </div>
-          <h4>INSTANT LOAN</h4>
-          <button className={applyNowBtn}>APPLY NOW</button>
         </div>
+
         <div className={ourProductsItem}>
+          <div className={ourProductsItemInner}>
+            <div className={ourProductsItemFront}>
+              <div className={ourProductsItemImg}>
+                <img src={persLoan} alt="img" />
+              </div>
+              <h4>PERSONAL LOAN</h4>
+              <button className={applyNowBtn}>APPLY NOW</button>
+            </div>
+            <div className={ourProductsItemBack}>
+              <div className={ourProductsItemImg}>
+                <img src={persLoan} alt="img" />
+              </div>
+              <h4>Available at 3%</h4>
+              <button className={applyNowBtn}>APPLY NOW</button>
+            </div>
+          </div>
+        </div>
+
+        <div className={ourProductsItem}>
+          <div className={ourProductsItemInner}>
+            <div className={ourProductsItemFront}>
+              <div className={ourProductsItemImg}>
+                <img src={smeLoan} alt="img" />
+              </div>
+              <h4>SME LOAN</h4>
+              <button className={applyNowBtn}>APPLY NOW</button>
+            </div>
+            <div className={ourProductsItemBack}>
+              <div className={ourProductsItemImg}>
+                <img src={smeLoan} alt="img" />
+              </div>
+              <h4>Available at 3%</h4>
+              <button className={applyNowBtn}>APPLY NOW</button>
+            </div>
+          </div>
+        </div>
+
+        <div className={ourProductsItem}>
+          <div className={ourProductsItemInner}>
+            <div className={ourProductsItemFront}>
+              <div className={ourProductsItemImg}>
+                <img src={homeLoan} alt="img" />
+              </div>
+              <h4>HOME LOAN</h4>
+              <button className={applyNowBtn}>APPLY NOW</button>
+            </div>
+            <div className={ourProductsItemBack}>
+              <div className={ourProductsItemImg}>
+                <img src={homeLoan} alt="img" />
+              </div>
+              <h4>Available at 3%</h4>
+              <button className={applyNowBtn}>APPLY NOW</button>
+            </div>
+          </div>
+        </div>
+
+        <div className={ourProductsItem}>
+          <div className={ourProductsItemInner}>
+            <div className={ourProductsItemFront}>
+              <div className={ourProductsItemImg}>
+                <img src={lapLoan} alt="img" />
+              </div>
+              <h4>LOAN AGAINST PROPERTY</h4>
+              <button className={applyNowBtn}>APPLY NOW</button>
+            </div>
+            <div className={ourProductsItemBack}>
+              <div className={ourProductsItemImg}>
+                <img src={lapLoan} alt="img" />
+              </div>
+              <h4>Available at 3%</h4>
+              <button className={applyNowBtn}>APPLY NOW</button>
+            </div>
+          </div>
+        </div>
+
+        <div className={ourProductsItem}>
+          <div className={ourProductsItemInner}>
+            <div className={ourProductsItemFront}>
+              <div className={ourProductsItemImg}>
+                <img src={laiLoan} alt="img" />
+              </div>
+              <h4>LOAN AGAINST INVESTMENT</h4>
+              <button className={applyNowBtn}>APPLY NOW</button>
+            </div>
+            <div className={ourProductsItemBack}>
+              <div className={ourProductsItemImg}>
+                <img src={laiLoan} alt="img" />
+              </div>
+              <h4>Available at 3%</h4>
+              <button className={applyNowBtn}>APPLY NOW</button>
+            </div>
+          </div>
+        </div>
+
+        <div className={ourProductsItem}>
+          <div className={ourProductsItemInner}>
+            <div className={ourProductsItemFront}>
+              <div className={ourProductsItemImg}>
+                <img src={elLoan} alt="img" />
+              </div>
+              <h4>EDUCATION LOAN</h4>
+              <button className={applyNowBtn}>APPLY NOW</button>
+            </div>
+            <div className={ourProductsItemBack}>
+              <div className={ourProductsItemImg}>
+                <img src={elLoan} alt="img" />
+              </div>
+              <h4>Available at 3%</h4>
+              <button className={applyNowBtn}>APPLY NOW</button>
+            </div>
+          </div>
+        </div>
+
+        <div className={ourProductsItem}>
+          <div className={ourProductsItemInner}>
+            <div className={ourProductsItemFront}>
+              <div className={ourProductsItemImg}>
+                <img src={gldLoan} alt="img" />
+              </div>
+              <h4>GOLD LOAN</h4>
+              <button className={applyNowBtn}>APPLY NOW</button>
+            </div>
+            <div className={ourProductsItemBack}>
+              <div className={ourProductsItemImg}>
+                <img src={gldLoan} alt="img" />
+              </div>
+              <h4>Available at 3%</h4>
+              <button className={applyNowBtn}>APPLY NOW</button>
+            </div>
+          </div>
+        </div>
+
+        <div className={ourProductsItem}>
+          <div className={ourProductsItemInner}>
+            <div className={ourProductsItemFront}>
+              <div className={ourProductsItemImg}>
+                <img src={ccLoan} alt="img" />
+              </div>
+              <h4>CREDIT CARD</h4>
+              <button className={applyNowBtn}>APPLY NOW</button>
+            </div>
+            <div className={ourProductsItemBack}>
+              <div className={ourProductsItemImg}>
+                <img src={ccLoan} alt="img" />
+              </div>
+              <h4>Available at 3%</h4>
+              <button className={applyNowBtn}>APPLY NOW</button>
+            </div>
+          </div>
+        </div>
+
+        {/* <div className={ourProductsItem}>
           <div className={ourProductsItemImg}>
             <img src={persLoan} alt="img" />
           </div>
           <h4>PERSONAL LOAN</h4>
           <button className={applyNowBtn}>APPLY NOW</button>
-        </div>
-        <div className={ourProductsItem}>
+        </div> */}
+        {/* <div className={ourProductsItem}>
           <div className={ourProductsItemImg}>
             <img src={smeLoan} alt="img" />
           </div>
           <h4>SME LOAN</h4>
           <button className={applyNowBtn}>APPLY NOW</button>
-        </div>
-        <div className={ourProductsItem}>
+        </div> */}
+        {/* <div className={ourProductsItem}>
           <div className={ourProductsItemImg}>
             <img src={homeLoan} alt="img" />
           </div>
           <h4>HOME LOAN</h4>
           <button className={applyNowBtn}>APPLY NOW</button>
-        </div>
-        <div className={ourProductsItem}>
+        </div> */}
+        {/* <div className={ourProductsItem}>
           <div className={ourProductsItemImg}>
             <img src={lapLoan} alt="img" />
           </div>
           <h4>LOAN AGAINST PROPERTY</h4>
           <button className={applyNowBtn}>APPLY NOW</button>
-        </div>
-        <div className={ourProductsItem}>
+        </div> */}
+        {/* <div className={ourProductsItem}>
           <div className={ourProductsItemImg}>
             <img src={laiLoan} alt="img" />
           </div>
           <h4>LOAN AGAINST INVESTMENT</h4>
           <button className={applyNowBtn}>APPLY NOW</button>
-        </div>
-        <div className={ourProductsItem}>
+        </div> */}
+        {/* <div className={ourProductsItem}>
           <div className={ourProductsItemImg}>
             <img src={elLoan} alt="img" />
           </div>
           <h4>EDUCATION LOAN</h4>
           <button className={applyNowBtn}>APPLY NOW</button>
-        </div>
-        <div className={ourProductsItem}>
+        </div> */}
+        {/* <div className={ourProductsItem}>
           <div className={ourProductsItemImg}>
             <img src={gldLoan} alt="img" />
           </div>
           <h4>GOLD LOAN </h4>
           <button className={applyNowBtn}>APPLY NOW</button>
-        </div>
-        <div className={ourProductsItem}>
+        </div> */}
+        {/* <div className={ourProductsItem}>
           <div className={ourProductsItemImg}>
             <img src={ccLoan} alt="img" />
           </div>
           <h4>CREDIT CARD</h4>
           <button className={applyNowBtn}>APPLY NOW</button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
