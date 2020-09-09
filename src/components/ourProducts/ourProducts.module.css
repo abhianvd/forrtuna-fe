@@ -1,0 +1,118 @@
+.ourProductsWrapper {
+  margin: 2em 0;
+}
+.applyNowBtn {
+  visibility: hidden;
+}
+.title {
+  font-size: 1.7em;
+  color: #f59019;
+  text-align: center;
+  margin: 3em 0;
+  font-size: 2.1em;
+  text-align: center;
+  margin: 0.8em;
+  font-weight: 600;
+}
+.ourProductsItemsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3px 2em;
+  justify-content: center;
+  margin-top: 2em;
+}
+.ourProductsItem:hover {
+  background-color: lightblue;
+  background-color: #60b5ff;
+  background-color: #0648b3;
+  background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+}
+.applyNowBtn {
+  background-color: #f59019;
+  border-radius: 4px;
+  color: white;
+  padding: 5px 8px;
+  border: none;
+  margin-left: 0.8em;
+  margin-top: 5px;
+}
+.ourProductsItem:hover .applyNowBtn {
+  visibility: visible;
+}
+.ourProductsItem {
+  flex-basis: 30%;
+  text-align: center;
+  box-shadow: 0 0 4px #c5c4c4;
+  margin: 0.4em 8px;
+  padding-top: 0.8em;
+  padding-bottom: 0.29em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  perspective: 1000px;
+  height: 210px;
+}
+.ourProductsItem:hover .ourProductsItemInner {
+  transform: rotateY(180deg);
+}
+.ourProductsItemFront,
+.ourProductsItemBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.ourProductsItemBack {
+  transform: rotateY(180deg);
+}
+.ourProductsItemInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.ourProductsItemBack {
+}
+.ourProductsItemImg {
+  height: 50%;
+}
+.ourProductsItemImg img {
+  width: 100px;
+  /* margin-bottom: 1e  m; */
+  /* height: 80px; */
+}
+.ourProductsItem:hover h4 {
+  color: white;
+  font-weight: 400;
+  height: 20%;
+  font-size: 1.1em;
+}
+.ourProductsItem h4 {
+  color: #040c6c;
+  color: #22a8db;
+  font-size: 1em;
+  font-weight: 700;
+  margin-top: 0.9em;
+}
+.bottomBorderCenter {
+  position: relative;
+  display: inline-flex;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.bottomBorderCenter::after {
+  content: "";
+  position: absolute;
+  left: -19px;
+  right: 0;
+  width: 50px;
+  margin: auto;
+  height: 3px;
+  bottom: -15px;
+  /* border: 2px solid #f59019; */
+  background-color: #f59019;
+}

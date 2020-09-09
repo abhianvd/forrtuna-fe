@@ -1,0 +1,69 @@
+.footerWrapper {
+  background-color: #2759ab;
+  padding: 1.3em 0;
+  margin-top: 2em;
+}
+.footerItemsWrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footerColumnItem h3 {
+  color: #f59019;
+}
+.footerListItem {
+  margin: 0.4em 0;
+}
+.footerListItem a {
+  color: #cae1ef;
+  font-size: 0.85em;
+  font-weight: bold;
+}
+.footerListItem a:hover {
+  color: #ffffff;
+}
+.copyrightWrapper {
+  display: flex;
+  margin-top: 1.4em;
+  justify-content: space-between;
+  padding: 0 2em;
+}
+.copyrightWrapper h4 {
+  color: #f59019;
+}
+.socialIconsWrapper {
+  display: flex;
+}
+.socialItem {
+  margin: 0 0.4em;
+  font-size: 1.5em;
+  /* border-radius: 50%; */
+  color: white;
+  background-color: #f59019;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+.linkedInWrapper {
+  background-color: #0e76a8;
+}
+.twitterWrapper {
+  background-color: #00acee;
+}
+.fbWrapper {
+  background-color: #3b5998;
+}
+.whatsappWrapper {
+  background-color: #4fce5d;
+}
+.instWrapper {
+  background-color: #3f729b;
+}
+.ytWrapper {
+  background-color: #c4302b;
+}

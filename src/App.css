@@ -1,0 +1,180 @@
+body {
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  /* outline: 1px solid red; */
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+.App {
+}
+button {
+  cursor: pointer;
+  transition: background-color 250ms ease;
+}
+.expAdvice {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  padding: 0.8em;
+  align-items: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-family: "Source Sans Pro", sans-serif;
+  /* background: linear-gradient(
+    45deg,
+    rgba(196, 231, 255, 1) 0%,
+    rgba(205, 234, 255, 1) 84%,
+    rgba(158, 241, 247, 1) 100%
+  ); */
+}
+.expAdvice h4 {
+  color: rgba(0, 0, 0, 0.8);
+  /* font-weight: 400; */
+  line-height: 5px;
+  font-size: 1.3em;
+  font-weight: 500;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.getInTouchBtn {
+  background-color: #f59019;
+  border-radius: 4px;
+  color: white;
+  padding: 12px 12px;
+  border: none;
+  margin-left: 0.8em;
+  transition: all 220ms ease;
+  border-radius: 8px;
+  font-size: 1.3em;
+}
+.getInTouchBtn:hover {
+  background-color: #2759ab;
+}
+.callBackBtn {
+  background-color: #f59019;
+}
+button:hover {
+  background-color: #ea8f23;
+}
+/* the slides */
+.feedbackWrapper .slick-slider,
+.feedbackWrapper .slick-list,
+.feedbackWrapper .slick-track {
+  /* margin: 0 3px; */
+  height: 390px;
+  display: flex;
+  align-items: center;
+}
+/* the parent */
+.slick-list {
+  /* margin: 0 -3px; */
+}
+.slick-dots {
+  bottom: 20px !important;
+  z-index: 3;
+}
+.slick-dots li.slick-active button:before {
+  color: #f59019 !important;
+}
+.slick-dots li button:before {
+  font-size: 16px !important;
+  color: #ffffff !important;
+  /* border: 1px solid #ff9933 !important; */
+  opacity: 1 !important;
+}
+
+/* .slick-current .carouselCl {
+  transform: scale(1.1) !important;
+} */
+.feedbackWrapper .slick-slide > div {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%) !important;
+}
+.ant-modal-header {
+  background-color: #ff9800;
+}
+.ant-modal-title {
+  color: white;
+}
+.howItWorksCl .ant-steps-item-icon {
+  width: 2.6em !important;
+  height: 2.6em !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #5993f0 !important; */
+  color: white !important;
+}
+.howItWorksCl
+  .ant-steps-vertical
+  > .ant-steps-item
+  > .ant-steps-item-container
+  > .ant-steps-item-tail {
+  left: 20px !important;
+}
+.howItWorksCl .ant-steps-item-title {
+  color: #356ecc !important;
+  font-size: 20px;
+  margin-bottom: 0.8em;
+  margin-left: 1em;
+  font-weight: 600 !important;
+  letter-spacing: 0.7px;
+}
+.howItWorksCl
+  .ant-steps-item-finish
+  > .ant-steps-item-container
+  > .ant-steps-item-content
+  > .ant-steps-item-description {
+  color: #000000b3 !important;
+  margin-left: 1em;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.slick-slide:nth-child(odd) .carouselCl {
+  background-color: #2759ab;
+}
+.slick-slide:nth-child(even) .carouselCl {
+  background-color: #f59019;
+}
+.bottomBorder,
+.bottomBorderCenter {
+  position: relative;
+  display: inline-flex;
+  left: 50%;
+  transform: translate(-50%);
+}
+.bottomBorder::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 77%;
+  height: 3px;
+  bottom: -15px;
+  /* border: 2px solid #f59019; */
+  background-color: #f59019;
+}
+.bottomBorderCenter::after {
+  content: "";
+  position: absolute;
+
+  height: 3px;
+  bottom: -15px;
+  /* border: 2px solid #f59019; */
+  background-color: #f59019;
+}
+.ant-steps-vertical
+  > .ant-steps-item
+  > .ant-steps-item-container
+  > .ant-steps-item-tail::after {
+  width: 2px !important;
+}

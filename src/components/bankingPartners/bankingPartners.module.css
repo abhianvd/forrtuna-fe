@@ -1,0 +1,32 @@
+.bankingPartnersWrapper {
+  /* background-image: url("https://miro.medium.com/max/7796/1*-Edr3Rv56kStcgvsz-0jNg.jpeg"); */
+  background-position: center;
+  background-size: cover;
+  /* height: 500px; */
+  margin: 28px;
+}
+.title {
+  color: #356ecc;
+  font-size: 2.1em;
+  text-align: center;
+  margin: 0.8em;
+  font-weight: 600;
+}
+.colorOverlay {
+}
+.bankingPartnerItem {
+  background-color: white;
+  width: 90% !important;
+  /* flex-basis: 18%; */
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  height: 120px;
+  border-radius: 4px;
+}
+.bankingPartnerItem img {
+  width: 150px;
+}
+.bankingPartnersItemWrapper {
+}
