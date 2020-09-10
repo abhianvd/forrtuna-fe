@@ -37,12 +37,14 @@ button {
   ); */
 }
 .expAdvice h4 {
-  color: rgba(0, 0, 0, 0.8);
+  color: #356ecc;
   /* font-weight: 400; */
   line-height: 5px;
-  font-size: 1.3em;
-  font-weight: 500;
+  font-size: 1.7em;
+  font-weight: 600;
   font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  letter-spacing: 1px;
 }
 .getInTouchBtn {
   background-color: #f59019;
@@ -119,7 +121,7 @@ button:hover {
   > .ant-steps-item
   > .ant-steps-item-container
   > .ant-steps-item-tail {
-  left: 20px !important;
+  left: 26px !important;
 }
 .howItWorksCl .ant-steps-item-title {
   color: #356ecc !important;

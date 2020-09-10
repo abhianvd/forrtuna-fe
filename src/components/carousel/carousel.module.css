@@ -84,11 +84,13 @@
 }
 .celebrateWrapper {
   margin-top: 1.4em;
-  font-size: 2em;
-  text-decoration: underline;
-  color: #2759ab;
+  font-size: 3em;
+  color: #ffffff;
   text-align: center;
   font-weight: 600;
+  background-color: #8e7e6c7a;
+  border-radius: 3px;
+  padding: 0px 9px;
 }
 .carouselTile {
   background-color: #ffffffe6;

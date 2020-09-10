@@ -22,6 +22,7 @@ const OurProducts = (props) => {
     ourProductsItemInner,
     ourProductsItemBack,
     bottomBorderCenter,
+    creditApplyBtn,
   } = classes;
 
   return (
@@ -34,7 +35,7 @@ const OurProducts = (props) => {
               <div className={ourProductsItemImg}>
                 <img src={instLoan} alt="img" />
               </div>
-              <h4>INSTANT LOAN</h4>
+              <h4>Instant Loan</h4>
             </div>
             <div className={ourProductsItemBack}>
               <div className={ourProductsItemImg}>
@@ -52,7 +53,7 @@ const OurProducts = (props) => {
               <div className={ourProductsItemImg}>
                 <img src={persLoan} alt="img" />
               </div>
-              <h4>PERSONAL LOAN</h4>
+              <h4>Personal Loan</h4>
             </div>
             <div className={ourProductsItemBack}>
               <div className={ourProductsItemImg}>
@@ -70,7 +71,7 @@ const OurProducts = (props) => {
               <div className={ourProductsItemImg}>
                 <img src={smeLoan} alt="img" />
               </div>
-              <h4>SME LOAN</h4>
+              <h4>SME Loan</h4>
             </div>
             <div className={ourProductsItemBack}>
               <div className={ourProductsItemImg}>
@@ -88,7 +89,7 @@ const OurProducts = (props) => {
               <div className={ourProductsItemImg}>
                 <img src={homeLoan} alt="img" />
               </div>
-              <h4>HOME LOAN</h4>
+              <h4>Home Loan</h4>
             </div>
             <div className={ourProductsItemBack}>
               <div className={ourProductsItemImg}>
@@ -106,7 +107,7 @@ const OurProducts = (props) => {
               <div className={ourProductsItemImg}>
                 <img src={lapLoan} alt="img" />
               </div>
-              <h4>LOAN AGAINST PROPERTY</h4>
+              <h4>Loan Against Property</h4>
             </div>
             <div className={ourProductsItemBack}>
               <div className={ourProductsItemImg}>
@@ -124,7 +125,7 @@ const OurProducts = (props) => {
               <div className={ourProductsItemImg}>
                 <img src={laiLoan} alt="img" />
               </div>
-              <h4>LOAN AGAINST INVESTMENT</h4>
+              <h4>Loan Against Investment</h4>
             </div>
             <div className={ourProductsItemBack}>
               <div className={ourProductsItemImg}>
@@ -142,7 +143,7 @@ const OurProducts = (props) => {
               <div className={ourProductsItemImg}>
                 <img src={elLoan} alt="img" />
               </div>
-              <h4>EDUCATION LOAN</h4>
+              <h4>Education Loan</h4>
             </div>
             <div className={ourProductsItemBack}>
               <div className={ourProductsItemImg}>
@@ -160,7 +161,7 @@ const OurProducts = (props) => {
               <div className={ourProductsItemImg}>
                 <img src={gldLoan} alt="img" />
               </div>
-              <h4>GOLD LOAN</h4>
+              <h4>Gold Loan</h4>
             </div>
             <div className={ourProductsItemBack}>
               <div className={ourProductsItemImg}>
@@ -178,14 +179,16 @@ const OurProducts = (props) => {
               <div className={ourProductsItemImg}>
                 <img src={ccLoan} alt="img" />
               </div>
-              <h4>CREDIT CARD</h4>
+              <h4>Credit Card</h4>
             </div>
             <div className={ourProductsItemBack}>
               <div className={ourProductsItemImg}>
                 <img src={ccLoan} alt="img" />
               </div>
 
-              <button className={applyNowBtn}>APPLY NOW</button>
+              <button className={`${applyNowBtn} ${creditApplyBtn}`}>
+                APPLY NOW
+              </button>
             </div>
           </div>
         </div>

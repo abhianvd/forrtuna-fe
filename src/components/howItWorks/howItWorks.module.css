@@ -48,3 +48,18 @@
   /* border: 2px solid #f59019; */
   background-color: #f59019;
 }
+.iconWrapper {
+  width: 45px;
+  height: 45px;
+  overflow: hidden;
+  border-radius: 50%;
+  background: #2663c7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  box-shadow: 0 0 2px 1px #a2b9de;
+}
+.iconWrapper img {
+  max-width: 78%;
+}

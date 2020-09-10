@@ -36,7 +36,7 @@ function App() {
       </div>
       <div className="expAdvice">
         <h4>Unable to decide or want our expert advice?</h4>
-        <button className="getInTouchBtn">Get in touch with us</button>
+        <button className="getInTouchBtn">GET IN TOUCH WITH US</button>
       </div>
       <div>
         <HowItWorks />
@@ -46,7 +46,7 @@ function App() {
           <i className="fas fa-phone-alt"></i> Call us on +91 90000 90000{"   "}
           <strong> OR </strong>
         </h4>
-        <button className="getInTouchBtn callBackBtn">Get a call back</button>
+        <button className="getInTouchBtn callBackBtn">GET A CALL BACK</button>
       </div>
       <div>
         <OurProducts />
